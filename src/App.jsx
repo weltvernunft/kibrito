@@ -8,6 +8,7 @@ import SunIcon from "./assets/icons/sun.svg";
 import BaseLayout from "./layout/BaseLayout";
 import { Dashboard, PageNotFound } from "./screens";
 
+
 function App() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
