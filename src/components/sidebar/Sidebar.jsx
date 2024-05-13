@@ -13,6 +13,7 @@ import {
   MdOutlineMessage,
   MdOutlinePeople,
   MdOutlineSettings,
+  MdOutlineFastfood,
   MdOutlineShoppingBag,
 } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -44,7 +45,9 @@ const Sidebar = () => {
 
   return (
     <nav
-      className={`sidebar overflow-hidden ${isSidebarOpen ? "sidebar-show" : ""}`}
+      className={`sidebar overflow-hidden ${
+        isSidebarOpen ? "sidebar-show" : ""
+      }`}
       ref={navbarRef}
     >
       <div className="sidebar-top">
@@ -72,6 +75,14 @@ const Sidebar = () => {
                   <MdOutlineBarChart size={20} />
                 </span>
                 <span className="menu-link-text">Статистика</span>
+              </Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/restaurants" className="menu-link">
+                <span className="menu-link-icon">
+                  <MdOutlineFastfood size={20} />
+                </span>
+                <span className="menu-link-text">Рестораны</span>
               </Link>
             </li>
             <li className="menu-item">
